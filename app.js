@@ -23,8 +23,8 @@ app.use((req,res,next)=>{
   app.use(cors())
   next();
 })
-
-app.use('/',dataApi);
+//rota principar usada para os dados da api.
+app.use('/', dataApi);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
