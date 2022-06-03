@@ -21,24 +21,26 @@ rota : /calculateBuy
 
 controller : './controllers/compras.js' - responsavel por fazer fazer calculos de compras e vendar e retornar uma api para utilizar nos cards com informações especificas (compras, vendas, icms, st)
 
-- Formato de retorno de api = [
-{
+- Formato de retorno de api = 
+[{
+
     'tag' : 'tag desejada para o card',
     'valor' : 'valor resultante do pedido na tag'
-}
-]
+    
+}]
 ------------------------------------------------------------------------------
 
 rota : '/tableSource'
 
 Controller : './controllers/table.js'  - responsavel por fazer os calculos e retornar uma api com informações especificas (compras, vendas, icms, st) para utilização em tabelas.
 
-- Formato de retorno de api = [
- {
+- Formato de retorno de api = 
+[{
+
     ano : 'ano referente ao pedido',
     compras : 'valor das compras',
     vendas : 'valor das vendas',
     ICMS : 'valor do icms',
     ST : 'valor do st"
-}
-]
+    
+}]
