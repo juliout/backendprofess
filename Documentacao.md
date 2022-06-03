@@ -7,11 +7,15 @@ rota : '/chartSource '.
 Controller : './controllers/chart.js' - responsavel por fazer os calculos relacionados as vendas e compras de cada ano e retornar uma api com esses calculos formatados para utilizar nos graficos: 
 
 - Formato de retorno de api =
+
 [{
+
     ano : 'ano desejado',
     saldo : 'valor referente ao calculo entre compras e vendas',
     porcentagem : 'porcentagem referente ao saldo total de todos os anos desejados'
+    
 }]
+
  --------------------------------------------------------------------------
 rota : /calculateBuy
 
