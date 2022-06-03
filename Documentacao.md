@@ -2,7 +2,8 @@ Backend com finalidade de devolver apis com resultados de calculos feitos aparti
 e retornar em apis os calculos ja formatados para utilizar na area especifica.
 
 
-rota : '/chartSource '
+rota : '/chartSource '.
+
 Controller : './controllers/chart.js' - responsavel por fazer os calculos relacionados as vendas e compras de cada ano e retornar uma api com esses calculos formatados para utilizar nos graficos: 
 
 - Formato de retorno de api =
@@ -13,6 +14,7 @@ Controller : './controllers/chart.js' - responsavel por fazer os calculos relaci
 }]
  --------------------------------------------------------------------------
 rota : /calculateBuy
+
 controller : './controllers/compras.js' - responsavel por fazer fazer calculos de compras e vendar e retornar uma api para utilizar nos cards com informações especificas (compras, vendas, icms, st)
 
 - Formato de retorno de api = [
@@ -24,6 +26,7 @@ controller : './controllers/compras.js' - responsavel por fazer fazer calculos d
 ------------------------------------------------------------------------------
 
 rota : '/tableSource'
+
 Controller : './controllers/table.js'  - responsavel por fazer os calculos e retornar uma api com informações especificas (compras, vendas, icms, st) para utilização em tabelas.
 
 - Formato de retorno de api = [
